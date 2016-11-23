@@ -2,9 +2,13 @@
 function insererElements() {
   var section = document.getElementById("listePokemons");
   for (i = 0; i < pokemon.length; i++) {
+    var a = document.createElement("a");
+    a.href = pokemon[i]["lien"];
+    section.appendChild(a);
+
     var article = document.createElement("article");
     article.id = pokemon[i]["nom"];
-    section.appendChild(article);
+    a.appendChild(article);
 
     var nomd = document.createElement("p");
     nomd.id = "nom";
@@ -21,15 +25,19 @@ function insererElements() {
     numd.innerHTML = pokemon[i]['numero'];
     article.appendChild(numd);
 
-    var typed = document.createElement("p");
-    typed.id = "type";
-    typed.innerHTML = pokemon[i]["type"];
-    article.appendChild(typed);
+    for(j = 0; j < pokemon[i]["types"].length; j++) {
+      var typed = document.createElement("span");
+      typed.id = pokemon[i]["types"][j]["type"];
+      typed.innerHTML = pokemon[i]["types"][j]["type"];
+      article.appendChild(typed);
+    }
 
     var descriptiond = document.createElement("p");
     descriptiond.id = "description";
     descriptiond.innerHTML = pokemon[i]["description"];
     article.appendChild(descriptiond);
+
+
   }
 }
 

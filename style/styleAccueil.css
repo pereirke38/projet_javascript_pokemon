@@ -18,20 +18,69 @@ article {
   border:solid;
   display: inline-block;
   width: 25%;
-  height: 300px;
+  height: 250px;
   margin-left: 5%;
   margin-bottom: 1%;
   vertical-align: top;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
 }
 
 #nom {
+  margin-top: 0px;
   text-align: center;
+  border-bottom: solid;
+  background-color: #F51C00;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 0px;
+}
+
+#image {
+  background-color: white;
+}
+
+#num {
+  background-color: #8E8584;
+}
+
+#type {
+  background-color: white;
+}
+
+#description {
+  background-color: #8E8584;
+  height: 50%;
 }
 
 a {
   color: black;
-  font-weight: bold;
   text-decoration: none;
+}
+
+a:hover article {
+  width: 28%;
+  height: 280px;
+}
+
+span {
+  font-size: 12px;
+  font-weight:bold;
+  color: white;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-right:5px;
+}
+
+span:nth-child(4) {
+  margin-left: 23%;
+}
+
+span:only-of-type {
+  margin-left: 35%;
 }
 
 #FEU {
@@ -43,7 +92,7 @@ a {
 }
 
 #ELECTRIK {
-  background-color:#ffff00;
+  background-color:#ffd800;
   padding-left: 30px;
   padding-right: 30px;
 }

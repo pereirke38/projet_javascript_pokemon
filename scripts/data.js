@@ -2,50 +2,95 @@ var pokemon = [
 	{
 		"nom": "Dracaufeu",
 		"numero": "006",
-		"type": "FEU/VOL",
+		"types": [
+			{
+				"type":"FEU"
+			},
+			{
+				"type":"VOL"
+			}
+		],
 		"image": {
 			"src": "images/accueil/006.png"
 	},
-		"description": "Quand il crache son souffle brûlant, la flamme au bout de sa queue s’embrase."
+		"description": "Quand il crache son souffle brûlant, la flamme au bout de sa queue s’embrase.",
+		"lien":"dracaufeu.html"
 	}, {
 		"nom": "Voltali",
 		"numero": "135",
-		"type": "ELEKTRIK",
+		"types": [
+			{
+				"type":"ELECTRIK"
+			}
+		],
 		"image": {
 			"src": "images/accueil/135.png"
 		},
-		"description": "Chaque poil sur son corps se dresse quand il se charge en électricité."
+		"description": "Chaque poil sur son corps se dresse quand il se charge en électricité.",
+		"lien":"#"
 	}, {
 		"nom": "Amphinobi",
 		"numero": "658",
-		"type": "EAU/TENEBRE",
+		"types": [
+			{
+				"type":"EAU"
+			},
+			{
+				"type":"TENEBRE"
+			}
+		],
 		"image": {
 			"src": "images/accueil/658.png"
 		},
-		"description": "Il transforme des jets d’eau sous pression en redoutables shuriken. Une fois lancés, ils tournent si vite qu’ils peuvent même couper le métal."
+		"description": "Il transforme des jets d’eau sous pression en redoutables shuriken. Une fois lancés, ils tournent si vite qu’ils peuvent même couper le métal.",
+		"lien":"#"
 	}, {
 		"nom": "Tyranocif",
 		"numero": "248",
-		"type": "ROCHE/TENEBRE",
+		"types": [
+			{
+				"type":"ROCHE"
+			},
+			{
+				"type":"TENEBRE"
+			}
+		],
 		"image": {
 			"src": "images/accueil/248.png"
 		},
-		"description": "D’une main seulement il a assez de force pour faire trembler la terre et s’écrouler une montagne."
+		"description": "D’une main seulement il a assez de force pour faire trembler la terre et s’écrouler une montagne.",
+		"lien":"tyranocif.html"
 	}, {
 		"nom": "Gardevoir",
 		"numero": "282",
-		"type": "PSY/FEE",
+		"types": [
+			{
+				"type":"PSY"
+			},
+			{
+				"type":"FEE"
+			}
+		],
 		"image": {
 			"src": "images/accueil/282.png"
 		},
-		"description": "Prêt à tout pour protéger son Dresseur, il peut créer un mini trou noir par sa seule force mentale."
+		"description": "Prêt à tout pour protéger son Dresseur, il peut créer un mini trou noir par sa seule force mentale.",
+		"lien":"#"
 	}, {
 		"nom": "Lucario",
 		"numero": "448",
-		"type": "COMBAT/ACIER",
+		"types": [
+			{
+				"type":"COMBAT"
+			},
+			{
+				"type":"ACIER"
+			}
+		],
 		"image": {
 			"src": "images/accueil/448.png"
 		},
-		"description": "Il peut deviner les pensées et les mouvements des autres en analysant leur aura."
+		"description": "Il peut deviner les pensées et les mouvements des autres en analysant leur aura.",
+		"lien":"#"
 	}
 ]
