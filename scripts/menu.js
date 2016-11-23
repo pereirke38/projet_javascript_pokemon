@@ -7,27 +7,27 @@ var menu = {
     "nom":"Pokémons",
     "contenu":[
       {
-        "1":"Dracaufeu",
+        "nom":"Dracaufeu",
         "lien":"dracaufeu.html"
       },
       {
-        "2":"Voltali",
+        "nom":"Voltali",
         "lien":""
       },
       {
-        "3":"Tyranocif",
+        "nom":"Tyranocif",
         "lien":"tyranocif.html"
       },
       {
-        "4":"Gardevoir",
+        "nom":"Gardevoir",
         "lien":""
       },
       {
-        "5":"Lucario",
+        "nom":"Lucario",
         "lien":""
       },
       {
-        "6":"Amphinobi",
+        "nom":"Amphinobi",
         "lien":""
       }
     ]

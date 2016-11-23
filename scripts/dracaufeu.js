@@ -116,3 +116,39 @@ function insererElements() {
   }
 
 }
+
+function insererMenu() {
+
+  var nav = document.getElementById("menu");
+
+  var div = document.createElement("div");
+  div.className = "menuItem";
+  div.id = "menuAccueil";
+  nav.appendChild(div);
+
+  var a = document.createElement("a");
+  a.textContent = menu["elem1"]["nom"];
+  a.href = menu["elem1"]["lien"];
+  div.appendChild(a);
+
+  var div = document.createElement("div");
+  div.className = "menuItem";
+  div.id = "pokemons";
+  div.textContent = "Pokémons"
+  nav.appendChild(div);
+
+  var ul = document.createElement("ul");
+  div.appendChild(ul);
+
+  for(i = 0; i < menu["elem2"]["contenu"].length; i++) {
+    var li = document.createElement("li");
+    li.className = "menuElement";
+    ul.appendChild(li);
+
+    var a = document.createElement("a");
+    a.href = menu["elem2"]["contenu"][i]["lien"];
+    a.textContent = menu["elem2"]["contenu"][i]["nom"];
+    li.appendChild(a);
+  }
+
+}
