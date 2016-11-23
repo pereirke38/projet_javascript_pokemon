@@ -6,28 +6,28 @@ function insererElements() {
     article.id = pokemon[i]["nom"];
     section.appendChild(article);
 
-    var numd = document.createElement("p");
-    numd.id ="num"+pokemon[i]["nom"];
-    numd.innerHTML = pokemon[i]['numero'];
-    article.appendChild(numd);
-
     var nomd = document.createElement("p");
-    nomd.id = "nom"+pokemon[i]["nom"];
+    nomd.id = "nom";
     nomd.innerHTML = pokemon[i]["nom"];
     article.appendChild(nomd);
 
     var imgd = document.createElement("img");
-    imgd.id = "image"+pokemon[i]["nom"];
+    imgd.id = "image";
     imgd.src = pokemon[i]["image"]["src"];
     article.appendChild(imgd);
 
+    var numd = document.createElement("p");
+    numd.id ="num";
+    numd.innerHTML = pokemon[i]['numero'];
+    article.appendChild(numd);
+
     var typed = document.createElement("p");
-    typed.id = "type"+pokemon[i]["nom"];
+    typed.id = "type";
     typed.innerHTML = pokemon[i]["type"];
     article.appendChild(typed);
 
     var descriptiond = document.createElement("p");
-    descriptiond.id = "description"+pokemon[i]["nom"];
+    descriptiond.id = "description";
     descriptiond.innerHTML = pokemon[i]["description"];
     article.appendChild(descriptiond);
   }
