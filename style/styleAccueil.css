@@ -1,0 +1,262 @@
+header {
+  border:solid;
+  border-radius:20px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #F51C00;
+  margin-bottom: 20px;
+}
+
+body {
+  position:absolute;
+  top: 5%;
+  overflow: auto;
+  background-color: #8E8584;
+}
+
+#accueil {
+  margin-bottom:20px;
+}
+
+#accueil article{
+  border:solid;
+  border-radius: 10px;
+  background-color: white;
+}
+#accueil article h1 {
+  text-align:center;
+  font-size: 20px;
+  background-color: #F51C00;
+  border-radius:10px 10px 0px 0px;
+  margin-top:0px;
+}
+
+#titre {
+  margin-left: auto;
+  margin-right:auto;
+  border-top:solid;
+  border-right:solid;
+  border-left:solid;
+  border-radius:10px 10px 0px 0px;
+}
+
+#titre h1 {
+  text-align:center;
+  font-size: 20px;
+  background-color: #F51C00;
+  border-radius:10px 10px 0px 0px;
+  margin:0px;
+}
+
+table{
+  width:100%;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  border-spacing: 0px;
+  border-radius:0px 0px 10px 10px;
+  margin-bottom: 20px;
+}
+
+th {
+  padding:5px;
+  text-align: center;
+  border-spacing: 0px;
+  background-color: #F51C00;
+}
+
+th:first-child{
+  text-align: left;
+}
+
+th:nth-child(2) {
+  text-align:left;
+}
+
+tr:nth-child(2n+0) {
+  background-color: white;
+}
+
+td {
+  border-spacing:0px;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+td:last-child {
+  text-align: left;
+}
+
+td:nth-child(4) {
+  text-align: center;
+}
+
+td span {
+  font-size: 12px;
+  font-weight:bold;
+  color: white;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-right:5px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#FEU {
+  background-color:#ff3300;
+}
+
+#VOL {
+  background-color:#66ffff;
+}
+
+#ELECTRIK {
+  background-color:#ffff00;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#ROCHE {
+  background-color:#993300;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#TENEBRE {
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#PSY {
+  background-color:#ff0080;
+}
+
+#FEE {
+  background-color:#ff99cc;
+}
+
+#COMBAT {
+  background-color: #cc2900;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#ACIER {
+  background-color:#8a8a5c;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+#EAU {
+  background-color:#6666ff;
+}
+
+img {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  background-color: #F51C00;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+nav a {
+  font-weight: normal;
+}
+
+.menuItem {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
+
+.menuElement {
+  display: inherit;
+  font-weight: normal;
+}
+
+#pokemons {
+  width: 10%;
+}
+
+#pokemons ul {
+  position: absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+  background-color: #F51C00;
+  list-style: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+#pokemons:hover ul {
+  max-height:15em;
+}
+
+.menuItem:hover {
+  background: #ff4d4d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.menuElement:hover {
+  background: #ff4d4d;
+  font-weight: bold;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+
+  #accueil {
+    display: none;
+  }
+
+  a {
+    font-weight: normal;
+  }
+
+  td {
+    border-top: solid;
+    border-spacing: 0px;
+  }
+
+  #titre h1 {
+    border-bottom: solid;
+  }
+
+  
+}
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+    td:nth-child(4), td:nth-child(5), th:nth-child(4), th:nth-child(5) {
+      display:none;
+    }
+  }

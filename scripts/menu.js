@@ -1,0 +1,35 @@
+var menu = {
+  "elem1":{
+    "nom":"Accueil",
+    "lien":"pokedex_accueil.html"
+  },
+  "elem2":{
+    "nom":"Pokémons",
+    "contenu":[
+      {
+        "1":"Dracaufeu",
+        "lien":"dracaufeu.html"
+      },
+      {
+        "2":"Voltali",
+        "lien":""
+      },
+      {
+        "3":"Tyranocif",
+        "lien":"tyranocif.html"
+      },
+      {
+        "4":"Gardevoir",
+        "lien":""
+      },
+      {
+        "5":"Lucario",
+        "lien":""
+      },
+      {
+        "6":"Amphinobi",
+        "lien":""
+      }
+    ]
+  }
+};
