@@ -21,6 +21,7 @@ header {
   border:solid;
   border-radius: 20px;
   background-color: white;
+  margin-left: 12.5%;
 }
 
 #image img {
@@ -28,7 +29,7 @@ header {
 }
 
 #description {
-  width: 74.5%;
+  width: 55%;
   display: inline-block;
   border-radius:20px;
   border: solid;
@@ -66,7 +67,11 @@ p #first-word {
   border: solid;
   border-radius: 20px;
   margin-top: 20px;
-  width: 100%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color: white;
 }
 
 #informations article {
@@ -85,8 +90,7 @@ p #first-word {
 }
 
 #types {
-  width:28%;
-  
+  width:25%;
   border-bottom-left-radius: 20px;
 }
 
@@ -99,9 +103,10 @@ p #first-word {
 }
 
 #faiblesses {
-  width: 71.7%;
+  width: 74.65%;
   border-left: solid;
   border-bottom-right-radius: 20px;
+  padding-right: 0.10%;
 }
 
 #faiblesses #valeur {
@@ -143,7 +148,7 @@ span {
 }
 
 #ELECTRIK {
-  background-color:#ffff00;
+  background-color:#ffd800;
   padding-left: 29px;
   padding-right: 29px;
 }
@@ -223,8 +228,9 @@ span {
 }
 
 #evolution{
-  width:37%;
-  margin-left: 25%;
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-align: center;
   margin-top:20px;
@@ -256,16 +262,15 @@ span {
 #evolution p {
   background-color: #F51C00;
   margin-top: 0px;
+  text-align: center;
+  padding-left: 50%;
+  padding-right: 50%;
 }
 
-#evolution li:last-child {
-  border-left: solid;
+#evolution img {
+  margin-left: 10%;
 }
 
-#evolution li:first-child p {
-  margin-bottom:50px;
-  width:103%;
-}
 
 p:first-child{
   font-weight: bold;

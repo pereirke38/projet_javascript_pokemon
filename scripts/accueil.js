@@ -58,7 +58,7 @@ function insererMenu() {
   var div = document.createElement("div");
   div.className = "menuItem";
   div.id = "pokemons";
-  div.textContent = "Pokémons"
+  div.textContent = "Pokémons";
   nav.appendChild(div);
 
   var ul = document.createElement("ul");

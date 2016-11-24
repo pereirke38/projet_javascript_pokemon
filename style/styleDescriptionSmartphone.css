@@ -1,0 +1,50 @@
+@media screen and (max-width: 980px) {
+  #image {
+    display: block;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pokemons {
+    width: 15%;
+  }
+
+  #informations {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #types li:first-child span {
+    margin-left: 60%;
+  }
+
+  #pokemons:hover ul{
+    position: absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+    background-color: #F51C00;
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  #pokemons:active ul {
+    max-height:15em;
+  }
+}

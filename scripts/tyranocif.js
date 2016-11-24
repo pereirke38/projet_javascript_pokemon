@@ -17,10 +17,14 @@ contenu = {
       "description":"Y: Lorsqu’il est en colère, il abat des montagnes et enterre des fleuves. On doit alors modifier les cartes."
     }
   ],
-  "types":  {
-    "type1":"ROCHE",
-    "type2":"TENEBRE"
-  },
+  "types": [
+    {
+      "type":"ROCHE"
+    },
+    {
+      "type":"TENEBRE"
+    }
+  ],
   "faiblesses":  [
     {
       "type":"SOL",
@@ -85,12 +89,12 @@ contenu = {
   ],
   "sprites":  [
     {
-      "titre":"NOIR/BLANC:",
+      "titre":"NOIR/BLANC",
       "normal":"images/tyranocif/sprite5G.png",
       "shiny":"images/tyranocif/sprite5GS.png"
     },
     {
-      "titre":"X/Y:",
+      "titre":"X/Y",
       "normal":"images/tyranocif/sprite6G.gif",
       "shiny":"images/tyranocif/sprite6GS.gif"
     }

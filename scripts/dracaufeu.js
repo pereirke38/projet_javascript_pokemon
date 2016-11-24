@@ -17,10 +17,14 @@ contenu = {
       "description":"Y: Ses ailes peuvent le faire voler à plus de 1400 m d’altitude. Ce Pokémon crache du feu à des températures très élevées."
     }
   ],
-  "types":  {
-    "type1":"FEU",
-    "type2":"VOL"
-  },
+  "types": [
+    {
+      "type":"FEU"
+    },
+    {
+      "type":"VOL"
+    }
+  ],
   "faiblesses":  [
     {
       "type":"SOL",
@@ -65,12 +69,12 @@ contenu = {
   ],
   "sprites":  [
     {
-      "titre":"NOIR/BLANC:",
+      "titre":"NOIR/BLANC",
       "normal":"images/dracaufeu/sprite5G.png",
       "shiny":"images/dracaufeu/sprite5GS.png"
     },
     {
-      "titre":"X/Y:",
+      "titre":"X/Y",
       "normal":"images/dracaufeu/sprite6G.gif",
       "shiny":"images/dracaufeu/sprite6GS.gif"
     }
