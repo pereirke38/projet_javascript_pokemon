@@ -12,7 +12,8 @@ function rechercher_in_page(str) {
             console.log(j);
             var element = childs[j];
             console.log(element);
-            if(element.innerHTML != null && element.innerHTML.indexOf(str) != -1) {
+            var strCompare = element.innerHTML.toUpperCase();
+            if(strCompare != null && strCompare.indexOf(str.toUpperCase()) != -1) {
               found = 1;
             }
           }
