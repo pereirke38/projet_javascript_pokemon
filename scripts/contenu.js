@@ -1,17 +1,21 @@
 function insererElements() {
 
+  // Insertion du titre
   var header = document.createElement("header");
   header.innerHTML = contenu["nom"];
   document.body.appendChild(header);
 
+  // Insertion de la section imaage
   var section = document.createElement("section");
   section.id = "image";
   document.body.appendChild(section);
 
+  // Insertion de l'image du pokémon
   var img = document.createElement("img");
   img.src = contenu["image"]["src"];
   section.appendChild(img);
 
+  // Insertion de l'élément section description
   var section = document.createElement("section");
   section.id = "description";
   document.body.appendChild(section);
@@ -23,12 +27,14 @@ function insererElements() {
   titre1.innerHTML = "Description de "+contenu["nom"];
   article.appendChild(titre1);
 
+  // Insertion des différentes descriptions du pokémon
   for(i=0; i < contenu["descriptions"].length; i++){
     var description = document.createElement("p");
     description.innerHTML = contenu["descriptions"][i]["description"];
     article.appendChild(description);
   }
 
+  // Insertion de l'élément section Informations
   var section = document.createElement("section");
   section.id = "informations";
   document.body.appendChild(section);
@@ -48,6 +54,7 @@ function insererElements() {
   var ul = document.createElement("ul");
   article.appendChild(ul);
 
+  // Insertion des types du pokémon
   for(i = 0; i < contenu["types"].length; i++) {
     var li = document.createElement("li");
     ul.appendChild(li);
@@ -69,6 +76,7 @@ function insererElements() {
   var ul = document.createElement("ul");
   article.appendChild(ul);
 
+  // Insertions des types ainsi que la valeur de l'efficacité sur le pokémon
   for(i=0; i < contenu["faiblesses"].length; i++){
     var li = document.createElement("li");
     ul.appendChild(li);
@@ -84,13 +92,14 @@ function insererElements() {
     li.appendChild(span);
   }
 
+  // Insertion de l'élément section evolution
   var section = document.createElement("section");
   section.id = "evolution";
   document.body.appendChild(section);
 
   var article = document.createElement("article");
   section.appendChild(article);
-  
+
   var titre1 = document.createElement("h1");
   titre1.innerHTML = "Evolution";
   article.appendChild(titre1);
@@ -98,6 +107,7 @@ function insererElements() {
   var ul = document.createElement("ul");
   article.appendChild(ul);
 
+  // Insertions des différentes images du pokémon en fonction du jeu
   for(i=0; i < contenu["sprites"].length; i++){
     var li = document.createElement("li");
     ul.appendChild(li);
