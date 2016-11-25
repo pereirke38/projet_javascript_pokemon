@@ -41,3 +41,21 @@ function rechercher_in_page(str) {
   }
   return false;
 }
+
+function refuserToucheEntree(event)
+{
+    // Compatibilité IE / Firefox
+    if(!event && window.event) {
+        event = window.event;
+    }
+    // IE
+    if(event.keyCode == 13) {
+        event.returnValue = false;
+        event.cancelBubble = true;
+    }
+    // DOM
+    if(event.which == 13) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+}
