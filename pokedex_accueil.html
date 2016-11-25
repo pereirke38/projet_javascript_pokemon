@@ -14,9 +14,9 @@
     <nav id="menu">
 
     </nav>
-    <form name=search onsubmit="rechercher_in_page(this.string.value)">
+    <form name=search>
       <input name=string onchange="n = 0;">
-      <input type=submit value=Rechercher>
+      <input type=button value=Rechercher onclick="rechercher_in_page(this.form.string.value);">
     </form>
 
     <section id="listePokemons">
