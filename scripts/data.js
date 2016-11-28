@@ -13,7 +13,7 @@ var pokemon = [
 		"image": {
 			"src": "images/accueil/006.png"
 	},
-		"description": "Quand il crache son souffle brûlant, la flamme au bout de sa queue s’embrase.",
+		"description": "Quand il crache son souffle brûlant, la flamme au bout de sa queue s’embrase. Il a peur de l'eau",
 		"lien":"dracaufeu.html"
 	}, {
 		"nom": "Voltali",

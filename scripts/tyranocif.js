@@ -1,4 +1,4 @@
-contenu = {
+tyranocif = {
   "nom":"Tyranocif",
   "image":  {
     "src":"images/tyranocif/imgTyranocif.png"

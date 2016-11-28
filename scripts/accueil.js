@@ -10,7 +10,7 @@ function insererElements() {
 
     //Création du lien permettant de consulter la page d'un pokémon
     var a = document.createElement("a");
-    a.href = pokemon[i]["lien"];
+    a.href = "javascript:insererDescripton(description"+pokemon[i]["nom"]+")";
     section.appendChild(a);
 
     var article = document.createElement("article");
@@ -18,17 +18,17 @@ function insererElements() {
     a.appendChild(article);
 
     var nomd = document.createElement("p");
-    nomd.id = "nom";
+    nomd.className = "nom";
     nomd.innerHTML = pokemon[i]["nom"];
     article.appendChild(nomd);
 
     var imgd = document.createElement("img");
-    imgd.id = "image";
+    imgd.className = "image";
     imgd.src = pokemon[i]["image"]["src"];
     article.appendChild(imgd);
 
     var numd = document.createElement("p");
-    numd.id ="num";
+    numd.className ="num";
     numd.innerHTML = pokemon[i]['numero'];
     article.appendChild(numd);
 
@@ -36,19 +36,135 @@ function insererElements() {
     for(j = 0; j < pokemon[i]["types"].length; j++) {
       var typed = document.createElement("span");
       typed.id = pokemon[i]["types"][j]["type"];
+      typed.className = "type";
       typed.innerHTML = pokemon[i]["types"][j]["type"];
       article.appendChild(typed);
     }
 
     var descriptiond = document.createElement("p");
-    descriptiond.id = "description";
+    descriptiond.className = "description";
     descriptiond.innerHTML = pokemon[i]["description"];
     article.appendChild(descriptiond);
 
 
   }
-}
+  for(i = 0; i < contenu.length; i++) {
+    var section = document.createElement("section");
+    section.className = "pokemon";
+    section.id = "description"+contenu[i]["nom"];
+    document.body.appendChild(section);
 
+    var h1 = document.createElement("h1");
+    h1.innerHTML = contenu[i]["nom"];
+    section.appendChild(h1);
+
+    // Insertion de la section imaage
+    var article = document.createElement("article");
+    article.className = "descriptionImage";
+    section.appendChild(article);
+
+    // Insertion de l'image du pokémon
+    var img = document.createElement("img");
+    img.src = contenu[i]["image"]["src"];
+    article.appendChild(img);
+
+    // Insertion de l'élément section description
+    var article = document.createElement("article");
+    article.className = "descriptions";
+    section.appendChild(article);
+
+    var titre2 = document.createElement("h2");
+    titre2.innerHTML = "Description de "+contenu[i]["nom"];
+    article.appendChild(titre2);
+
+    // Insertion des différentes descriptions du pokémon
+    for(j=0; j < contenu[i]["descriptions"].length; j++){
+      var description = document.createElement("p");
+      description.innerHTML = contenu[i]["descriptions"][j]["description"];
+      article.appendChild(description);
+    }
+
+    // Insertion de l'élément section Informations
+    var article = document.createElement("article");
+    article.className = "descriptionTypes";
+    section.appendChild(article);
+
+    var titre2 = document.createElement("h2");
+    titre2.innerHTML = "Type";
+    article.appendChild(titre2);
+
+    var ul = document.createElement("ul");
+    article.appendChild(ul);
+
+    // Insertion des types du pokémon
+    for(j = 0; j < contenu[i]["types"].length; j++) {
+      var li = document.createElement("li");
+      ul.appendChild(li);
+
+      var span = document.createElement("span");
+      span.id = contenu[i]["types"][j]["type"];
+      span.innerHTML = contenu[i]["types"][j]["type"];
+      li.appendChild(span);
+    }
+
+    var article = document.createElement("article");
+    article.className = "faiblesses";
+    section.appendChild(article);
+
+    var titre2 = document.createElement("h2");
+    titre2.innerHTML = "Faiblesses";
+    article.appendChild(titre2);
+
+    var ul = document.createElement("ul");
+    article.appendChild(ul);
+
+    // Insertions des types ainsi que la valeur de l'efficacité sur le pokémon
+    for(j=0; j < contenu[i]["faiblesses"].length; j++){
+      var li = document.createElement("li");
+      ul.appendChild(li);
+
+      var span = document.createElement("span");
+      span.id = contenu[i]["faiblesses"][j]["type"];
+      span.innerHTML = contenu[i]["faiblesses"][j]["type"];
+      li.appendChild(span);
+
+      var span = document.createElement("span");
+      span.id = "valeur";
+      span.innerHTML = contenu[i]["faiblesses"][j]["valeur"];
+      li.appendChild(span);
+    }
+
+    // Insertion de l'élément section evolution
+    var article = document.createElement("article");
+    article.className = "evolution";
+    section.appendChild(article);
+
+    var titre2 = document.createElement("h2");
+    titre2.innerHTML = "Evolution";
+    article.appendChild(titre2);
+
+    var ul = document.createElement("ul");
+    article.appendChild(ul);
+
+    // Insertions des différentes images du pokémon en fonction du jeu
+    for(j=0; j < contenu[i]["sprites"].length; j++){
+      var li = document.createElement("li");
+      ul.appendChild(li);
+
+      var p = document.createElement("p");
+      p.innerHTML = contenu[i]["sprites"][j]["titre"];
+      li.appendChild(p);
+
+      var img = document.createElement("img");
+      img.src = contenu[i]["sprites"][j]["normal"];
+      li.appendChild(img);
+
+      var img = document.createElement("img");
+      img.src = contenu[i]["sprites"][j]["shiny"];
+      li.appendChild(img);
+    }
+  }
+}
 /**
  * Création et insertion du menu
  */
@@ -86,9 +202,13 @@ function insererMenu() {
     ul.appendChild(li);
 
     var a = document.createElement("a");
-    a.href = menu["elem2"]["contenu"][i]["lien"];
+    a.href = "javascript:insererDescripton(description"+ menu["elem2"]["contenu"][i]["nom"]+")";
     a.textContent = menu["elem2"]["contenu"][i]["nom"];
     li.appendChild(a);
   }
 
+}
+
+function insererDescripton(nom) {
+  nom.style.display = "block";
 }

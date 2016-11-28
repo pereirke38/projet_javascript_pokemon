@@ -8,6 +8,7 @@ header {
 }
 
 body {
+  /* On positionne le body en dessous du menu */
   position:absolute;
   top: 5%;
   overflow: auto;
@@ -33,7 +34,7 @@ article {
   overflow: hidden;
 }
 
-#nom {
+.nom {
   margin-top: 0px;
   text-align: center;
   border-bottom: solid;
@@ -42,19 +43,19 @@ article {
   margin-bottom: 0px;
 }
 
-#image {
+.image {
   background-color: white;
 }
 
-#num {
+.num {
   background-color: #8E8584;
 }
 
-#type {
+.type {
   background-color: white;
 }
 
-#description {
+.description {
   background-color: #8E8584;
   height: 50%;
 }
@@ -65,6 +66,7 @@ a {
 }
 
 a:hover article {
+  /* On zoom sur les articles lorsque le curseur les survols*/
   width: 28%;
   height: 280px;
 }
@@ -78,17 +80,19 @@ span {
   padding-right: 50px;
   padding-top:5px;
   padding-bottom:5px;
-  margin-right:5px;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 span:nth-child(4) {
-  margin-left: 23%;
+  margin-left: auto;
 }
 
 span:only-of-type {
-  margin-left: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+/* Style des types */
 #FEU {
   background-color:#ff3300;
 }
@@ -174,6 +178,7 @@ nav a {
   width: 10%;
 }
 
+/* gères l'affichage du menu déroulant */
 #pokemons ul {
   position: absolute;
   z-index: 1000;
